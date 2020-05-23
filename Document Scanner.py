@@ -4,6 +4,20 @@ import math
 import imutils
 from msvcrt import getch
 from matplotlib import pyplot as plt
+import sys
+from os import path
+
+args = sys.argv[1:]
+
+if len(args) == 0:
+    print("No file given. Exiting...")
+    sys.exit()
+else:
+    filename = args[0]
+
+    if not(path.exists(filename)):
+        print("The given file \"" + filename + "\" does not exist. Exiting...")
+        sys.exit()
 
 # Set to True if you want to see every key being pressed in stdout.
 DEBUG = False
@@ -11,7 +25,6 @@ DEBUG = False
 font = cv2.FONT_HERSHEY_DUPLEX
 
 
-filename = "C:\\Users\\stonisg\\Desktop\\Embedded AI\\Receipt.jpg"
 window_name = filename.split("\\")[-1]
 
 
@@ -47,7 +60,8 @@ while (k_code != 113) & (k_code != 81) & (k_code != 27):
             plt.imshow(img[:, :, ::-1])
             plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
             plt.show()
-
+        elif char.lower() == 'd':
+            pass
 
         if DEBUG:
             print("'" + char + "' : " + str(k_code))
