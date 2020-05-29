@@ -23,3 +23,6 @@ A simple document scanner using python's CV2 library.
     `python "Document Scanner.py" [filename]`
 
 - 'h' will display the help menu
+
+
+[Link to video tutorial.](https://youtu.be/Cm3mY_vXbWA)
