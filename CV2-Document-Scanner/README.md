@@ -25,4 +25,7 @@ A simple document scanner using python's CV2 library.
 - 'h' will display the help menu
 
 
+Please read the comments at the top of the `Document Reader.py` file for more settings as to how the program runs.
+
+
 [Link to video tutorial.](https://youtu.be/Cm3mY_vXbWA)

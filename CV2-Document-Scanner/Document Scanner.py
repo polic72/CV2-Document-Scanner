@@ -12,8 +12,10 @@ from skimage.filters import threshold_local
 # Set to True if you want to see every key being pressed in stdout.
 DEBUG = False
 
+# Another kind of debug, but only applies to the document reader section.
 STEPBY = False
 
+# Whether or not the document should be warped into a black-and-white style when document reading.
 WARP = False
 
 
