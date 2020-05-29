@@ -115,7 +115,17 @@ while (k_code != 113) & (k_code != 81) & (k_code != 27):
     try:
         char = chr(k_code)
 
-        if char.lower() == 's':
+        if char.lower() == 'h':
+            print("'h' - show this help screen")
+            print("'q' - quit")
+            print("'ESC' - quit")
+            print("'s' - save image")
+            print("'t' - add entered text")
+            print("'d' - read document")
+            print("'p' - show image as matplot")
+            print("'Left' - Rotate 90° counter-clockwise")
+            print("'Right' - Rotate 90° clockwise")
+        elif char.lower() == 's':
             print("Overwrite existing file? [y/n]")
 
             if yes_no_cv2():
